@@ -1,17 +1,8 @@
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain_openai import OpenAI
 from langchain.chains import RetrievalQA
 from langchain_community.document_loaders import PyPDFLoader
-
-
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY")
-
 
 def build_rag_pipeline(pdf_path):
     loader = PyPDFLoader(pdf_path)
@@ -20,13 +11,14 @@ def build_rag_pipeline(pdf_path):
     splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
     chunks = splitter.split_documents(docs)
 
-    embeddings = OpenAIEmbeddings()
+    # ✅ Use free HuggingFace embeddings instead of OpenAI
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+
     vectorstore = FAISS.from_documents(chunks, embeddings)
 
     qa = RetrievalQA.from_chain_type(
-        llm=OpenAI(),
+        llm=None,  # You can later plug in a free local LLM if needed
         chain_type="stuff",
         retriever=vectorstore.as_retriever()
     )
     return qa
-

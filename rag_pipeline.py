@@ -21,3 +21,4 @@ def build_rag_pipeline(pdf_path):
         chain_type="stuff",
         retriever=vectorstore.as_retriever()
     )
+    return qa

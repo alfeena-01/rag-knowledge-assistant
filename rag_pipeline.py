@@ -2,6 +2,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQA
+from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.llms import HuggingFaceHub  # or HuggingFacePipeline
 
 def build_rag_pipeline(pdf_path):

@@ -81,3 +81,21 @@ rag-knowledge-assistant/
 │── data/               # Folder for uploaded PDFs
 │── requirements.txt    # Dependencies
 │── README.md           # Project documentation
+
+
+🎯 Next Steps
+Try larger HuggingFace models for better answers.
+
+Add support for multiple PDFs.
+
+Extend to other file types (Word, text, etc.).
+
+Experiment with GPT4All or other local LLMs for offline Q&A.
+
+🙌 Contributing
+Pull requests are welcome!
+If you’d like to add new features (multi-file support, UI improvements, new models), feel free to fork and submit a PR.
+
+📜 License
+This project is open-source under the MIT License.
+You are free to use, modify, and distribute it with attribution.

@@ -48,3 +48,29 @@ python-dotenv
 Run the app:
 
 streamlit run app.py
+
+
+Steps:
+
+Upload a PDF file in the Streamlit UI.
+
+The assistant will:
+
+Load and split the PDF into chunks.
+
+Embed chunks with HuggingFace embeddings.
+
+Store them in FAISS.
+
+Retrieve relevant chunks.
+
+Generate answers using a local HuggingFace model.
+
+⚡ Notes
+✅ No API keys required — everything runs locally.
+
+🔄 You can swap flan-t5-small for larger models (flan-t5-base, flan-t5-large) if your machine can handle it.
+
+🛡️ If you later want to use API-based models (OpenAI or HuggingFaceHub), add your keys to a .env file and keep it out of GitHub with .gitignore.
+
+📂 Project Structure

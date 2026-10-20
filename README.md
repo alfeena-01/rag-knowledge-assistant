@@ -25,3 +25,6 @@ git clone https://github.com/your-username/rag-knowledge-assistant.git
 cd rag-knowledge-assistant
 
 pip install -r requirements.txt
+
+📋 Requirements
+Here’s the recommended requirements.txt:

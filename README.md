@@ -20,13 +20,14 @@ Everything runs **offline and free** — no OpenAI or HuggingFace API keys requi
 
 Clone the repo and install dependencies:
 
-```bash
-git clone https://github.com/your-username/rag-knowledge-assistant.git
+   ```bash
+   git clone https://github.com/your-username/rag-knowledge-assistant.git
+
 cd rag-knowledge-assistant
 
 pip install -r requirements.txt
 
-📋 Requirements
+## 📋 Requirements
 Here’s the recommended requirements.txt:
 
 langchain==0.2.11
@@ -44,7 +45,7 @@ torch
 python-dotenv
 
 
-🛠️ Usage
+## 🛠️ Usage
 Run the app:
 
 streamlit run app.py
@@ -66,14 +67,14 @@ Retrieve relevant chunks.
 
 Generate answers using a local HuggingFace model.
 
-⚡ Notes
+## ⚡ Notes
 ✅ No API keys required — everything runs locally.
 
 🔄 You can swap flan-t5-small for larger models (flan-t5-base, flan-t5-large) if your machine can handle it.
 
 🛡️ If you later want to use API-based models (OpenAI or HuggingFaceHub), add your keys to a .env file and keep it out of GitHub with .gitignore.
 
-📂 Project Structure
+## 📂 Project Structure
 
 rag-knowledge-assistant/
 │── app.py              # Streamlit entry point
@@ -83,7 +84,7 @@ rag-knowledge-assistant/
 │── README.md           # Project documentation
 
 
-🎯 Next Steps
+## 🎯 Next Steps
 Try larger HuggingFace models for better answers.
 
 Add support for multiple PDFs.
@@ -92,10 +93,10 @@ Extend to other file types (Word, text, etc.).
 
 Experiment with GPT4All or other local LLMs for offline Q&A.
 
-🙌 Contributing
+## 🙌 Contributing
 Pull requests are welcome!
 If you’d like to add new features (multi-file support, UI improvements, new models), feel free to fork and submit a PR.
 
-📜 License
+## 📜 License
 This project is open-source under the MIT License.
 You are free to use, modify, and distribute it with attribution.

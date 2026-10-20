@@ -74,3 +74,10 @@ Generate answers using a local HuggingFace model.
 🛡️ If you later want to use API-based models (OpenAI or HuggingFaceHub), add your keys to a .env file and keep it out of GitHub with .gitignore.
 
 📂 Project Structure
+
+rag-knowledge-assistant/
+│── app.py              # Streamlit entry point
+│── rag_pipeline.py     # RAG pipeline logic
+│── data/               # Folder for uploaded PDFs
+│── requirements.txt    # Dependencies
+│── README.md           # Project documentation

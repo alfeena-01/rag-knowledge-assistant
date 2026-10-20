@@ -46,3 +46,5 @@ python-dotenv
 
 🛠️ Usage
 Run the app:
+
+streamlit run app.py

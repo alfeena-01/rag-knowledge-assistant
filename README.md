@@ -42,3 +42,7 @@ sentence-transformers
 transformers
 torch
 python-dotenv
+
+
+🛠️ Usage
+Run the app:

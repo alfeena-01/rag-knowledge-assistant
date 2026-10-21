@@ -37,17 +37,29 @@ Everything runs **offline and free** — no OpenAI or HuggingFace API keys requi
 Here’s the recommended requirements.txt:
 
 langchain==0.2.11
+
 langchain-community==0.2.4
+
 langchain-text-splitters==0.2.4
+
 langchain-openai==0.1.7   # optional, not used here
+
 langsmith==0.1.147
+
 faiss-cpu==1.7.4
+
 streamlit==1.32.0
+
 PyPDF2==3.0.1
+
 pypdf==4.0.1
+
 sentence-transformers
+
 transformers
+
 torch
+
 python-dotenv
 
 ---

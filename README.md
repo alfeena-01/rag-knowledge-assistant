@@ -25,11 +25,11 @@ Everything runs **offline and free** — no OpenAI or HuggingFace API keys requi
     ```bash
     git clone https://github.com/your-username/rag-knowledge-assistant.git
     cd rag-knowledge-assistant
-    ```
+ ```
 
     ```bash
     pip install -r requirements.txt
-    ```
+ ```
 
 ---
 

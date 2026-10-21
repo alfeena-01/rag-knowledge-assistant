@@ -66,9 +66,9 @@ python-dotenv
 
 ## 🛠️ Usage
 Run the app:
-
+```bash
 streamlit run app.py
-
+```
 
 Steps:
 

@@ -102,9 +102,13 @@ Generate answers using a local HuggingFace model.
 rag-knowledge-assistant/
 
 │── app.py              # Streamlit entry point
+
 │── rag_pipeline.py     # RAG pipeline logic
+
 │── data/               # Folder for uploaded PDFs
+
 │── requirements.txt    # Dependencies
+
 │── README.md           # Project documentation
 
 ---

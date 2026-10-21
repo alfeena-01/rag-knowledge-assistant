@@ -100,6 +100,7 @@ Generate answers using a local HuggingFace model.
 ## 📂 Project Structure
 
 rag-knowledge-assistant/
+
 │── app.py              # Streamlit entry point
 │── rag_pipeline.py     # RAG pipeline logic
 │── data/               # Folder for uploaded PDFs

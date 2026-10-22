@@ -97,6 +97,7 @@ Generate answers using a local HuggingFace model.
 
 ---
 
+## 📂 Project Structure
 
 rag-knowledge-assistant/
 

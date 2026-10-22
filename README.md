@@ -130,6 +130,3 @@ If you’d like to add new features (multi-file support, UI improvements, new mo
 
 ---
 
-## 📜 License
-This project is open-source under the MIT License.
-You are free to use, modify, and distribute it with attribution.
